@@ -1,5 +1,5 @@
 /* =========================================================
-   たのてつサポーター & チームたのてつ LP（提案版）
+   たのてつサポーター & チームたのてつ LP
    ========================================================= */
 
 :root {
@@ -45,17 +45,6 @@ b { font-weight: 800; }
 .container { width: min(1120px, 100% - 40px); margin-inline: auto; }
 .narrow { width: min(760px, 100% - 40px); }
 .sp-only { display: none; }
-
-/* ---------- draft bar ---------- */
-.draft-bar {
-  background: var(--ink);
-  color: #fff;
-  font-size: 13px;
-  text-align: center;
-  padding: 8px 16px;
-  line-height: 1.6;
-}
-.draft-bar a { color: var(--yellow); }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -308,8 +297,6 @@ b { font-weight: 800; }
 .plan-price { font-family: var(--font-head); font-weight: 900; font-size: 30px; line-height: 1.1; }
 .plan-price small { display: block; text-align: center; font-size: 13px; color: var(--ink-soft); margin-top: 4px; }
 .plan-go { font-size: 13px; font-weight: 800; color: #fff; background: var(--coral); border-radius: 999px; padding: 2px 14px; border: 2px solid var(--ink); }
-.plan-big { background: var(--yellow); }
-.plan-big:hover { background: var(--yellow-soft); }
 .plan-notes { max-width: 1000px; margin: 36px auto 0; padding: 20px 24px 20px 44px; background: #fff; border: 2px solid var(--ink); border-radius: 16px; font-size: 14px; }
 .plan-notes li { margin: 4px 0; }
 
@@ -485,7 +472,6 @@ b { font-weight: 800; }
   .team-activities li:nth-child(n) { margin-left: 0; }
   .btn-lg { font-size: 16px; width: 100%; }
   .faq-item summary { font-size: 15px; padding-right: 44px; }
-  .draft-bar { font-size: 11px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
