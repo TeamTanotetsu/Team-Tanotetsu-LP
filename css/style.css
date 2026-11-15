@@ -246,9 +246,10 @@ b { font-weight: 800; }
 .about-plus {
   align-self: center; width: 56px; height: 56px; border-radius: 50%;
   background: var(--coral); color: #fff; border: 3px solid var(--ink);
-  display: grid; place-items: center; font-family: var(--font-head); font-weight: 900; font-size: 34px;
+  display: flex; align-items: center; justify-content: center; padding: 0; line-height: 0;
   box-shadow: var(--shadow-sm);
 }
+.about-plus svg, .to-top svg { display: block; }
 
 /* ---------- thanks ---------- */
 .thanks-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: thanks; }
@@ -390,10 +391,10 @@ b { font-weight: 800; }
 
 /* ---------- to top ---------- */
 .to-top {
-  position: fixed; right: 20px; bottom: 20px; z-index: 40;
+  position: fixed; right: 20px; bottom: 96px; z-index: 40;
   width: 52px; height: 52px; border-radius: 50%; background: var(--coral); color: #fff;
   border: 3px solid var(--ink); box-shadow: var(--shadow-sm);
-  display: grid; place-items: center; text-decoration: none; font-weight: 900; font-size: 22px;
+  display: flex; align-items: center; justify-content: center; text-decoration: none; line-height: 0;
   opacity: 0; pointer-events: none; transition: opacity .25s, transform .15s;
 }
 .to-top.is-visible { opacity: 1; pointer-events: auto; }
