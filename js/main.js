@@ -12,6 +12,14 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // ページ先頭へ戻る（ロゴ・上に戻るボタン）
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
   // スマホメニュー
   var toggle = document.querySelector('.menu-toggle');
   var nav = document.getElementById('global-nav');
